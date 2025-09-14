@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please complete this survey for helping us.</p>
+        <form id="survey-form">
+            <fieldset>
+
+                <legend>Personal information: </legend>
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Please enter your name.." required><br>
+
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email.." required><br>
+
+                <label id="number-label" for="number">Age: </label>
+                <input type="number" id="number" name="age" min="18" max="120" placeholder="Please enter your age.." required><br>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>What is your desired role in this company: </legend>
+                <select id="dropdown" name="role" required>
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Worker">Worker</option>
+                    <option value="Intern">Intern</option>4
+                    <option value="Other">Other</option>
+
+                </select>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>How your recommend us: </legend>
+                <input type="radio" id="yes" name="recommendation" value="Yes" required checked>
+                <label for="yes">Yes</label><br>
+
+                <input type="radio" id="no" name="recommendation" value="No" required>
+                <label for="no">No</label><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>How did you find about us: </legend>
+                <input type="checkbox" id="friends" name="source" value="Friends">
+                <label for="friends">Friends</label><br>
+
+                <input type="checkbox" id="search-engine" name="source" value="Search Engine">
+                <label for="search-engine">Search Engine</label><br>
+
+                <input type="checkbox" id="ad" name="source" value="Advertisement">
+                <label for="ad">Advertisement</label><br>
+
+                <input type="checkbox" id="other" name="source" value="Other">
+                <label for="other">Other</label><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Any comments or suggestions: </legend>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+
+            </fieldset>
+
+            <br>
+            <button type="submit" id="submit">Submit</button>
+
+                
+        </form>
+    </body>
+</html>
